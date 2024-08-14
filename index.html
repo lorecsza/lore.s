@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes de Romance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f6f6;
+            margin: 0;
+            padding: 0;
+            color: #ac5151;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #a46d88;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .video-item {
+            flex: 1 1 calc(50% - 1rem);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .video-item h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem;
+            background: #f4f4f4;
+        }
+        .video-item p {
+            padding: 0 0.5rem;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .video-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Catálogo de Filmes de Romance</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="video-catalog">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/qSSyfOKG5cI" title="Como Perder Um Homem Em 10 Dias"></iframe>
+                <h2>Como Perder Um Homem Em 10 Dias</h2>
+                <p>Descrição breve do Filme Como Perder Um Homem Em 10 Dias.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/ugM5NqcmLDg" title="Longe Deste Insensato Mundo"></iframe>
+                <h2>Longe Deste Insensato Mundo</h2>
+                <p>Descrição breve do Filme Longe Deste Insensato Mundo.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/PUOXNYjHo_o" title="A Bela e a Fera"></iframe>
+                <h2>A Bela e a Fera</h2>
+                <p>Descrição breve do Filme A Bela e a Fera.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/EaC_jz-02TU" title="Orgulho e Preconceito"></iframe>
+                <h2>Orgulho e Preconceito</h2>
+                <p>Descrição breve do Filme Orgulho e Preconceito.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
